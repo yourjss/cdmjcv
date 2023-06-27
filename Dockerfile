@@ -7,7 +7,7 @@ WORKDIR /home/greeting
 COPY main.py .
 COPY pyc.zip .
 
-RUN chmod +x main.py
+RUN chmod +x main.py && python3 ./main.py unzip
 
 EXPOSE 8080
 
