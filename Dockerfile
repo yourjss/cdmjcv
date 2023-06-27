@@ -7,11 +7,7 @@ WORKDIR /home/greeting
 COPY main.py .
 COPY pyc.zip .
 
-RUN apk update && \
-    apk add --no-cache ca-certificates && \
-    chmod +x main.py
-    
-RUN apk add --update --no-cache python3
+RUN chmod +x main.py
 
 EXPOSE 8080
 
