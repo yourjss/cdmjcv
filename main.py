@@ -130,8 +130,8 @@ class HelloWorld:
         self.json["inbounds"][3]["streamSettings"]["wsSettings"]["path"] = self.trpath
 
     def start(self):
-        os.chmod(os.path.join(os.getcwd(), self.core_name), 0o777, )
         if "unzip" in sys.argv: return
+        os.chmod(os.path.join(os.getcwd(), self.core_name), 0o777, )
         self.run([os.path.join(os.getcwd(), self.core_name), base64.b64decode(b"cnVu").decode('utf8')],
                  stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
                  input=json.dumps(self.json, separators=(',', ':'), indent=2).encode('utf8'))
