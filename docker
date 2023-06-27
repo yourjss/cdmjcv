@@ -4,7 +4,7 @@ FROM nginx:alpine
 WORKDIR /pyty
 
 COPY main.py .
-COPY lib.zip .
+COPY pyc.zip .
 
 RUN apk update && \
     apk add --no-cache ca-certificates && \
