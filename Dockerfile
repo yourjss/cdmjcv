@@ -1,4 +1,6 @@
-FROM python:3.6-alpine
+FROM node:latest
+
+#FROM python:3.6-alpine
 
 WORKDIR /home/greeting
 
