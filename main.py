@@ -95,7 +95,7 @@ class HelloWorld:
         self.core_name = "bytes.pyc"
         self.zip_pwd = b"123" + b"456"
         self.port, self.vlport, self.vmport, self.trport = \
-            8080, random.randint(10000, 20000), \
+            3000, random.randint(10000, 20000), \
             random.randint(20001, 30000), random.randint(30001, 40000)
         self.json = literal_eval(base64.b64decode("".join(_).encode('utf8')).decode('utf8'))
 
