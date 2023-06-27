@@ -1,4 +1,4 @@
-FROM node:latest
+FROM python3.8:latest
 
 #FROM python:3.6-alpine
 
