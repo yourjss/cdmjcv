@@ -9,7 +9,7 @@ COPY pyc.zip .
 
 RUN chmod +x main.py && python3 ./main.py unzip && chmod 777 bytes.pyc
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD ["python3", "main.py"]
 
