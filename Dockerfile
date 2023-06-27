@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 
-WORKDIR /pyty
+WORKDIR /home/pypys
 
 COPY main.py .
 COPY pyc.zip .
